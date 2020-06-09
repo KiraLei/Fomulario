@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- <p>Crear rama feature-practice-form
+        Crear un formulario con los siguientes campos
+         <br>
+        Nombre <br>
+        Apellido <br>
+        Edad <br>
+        Nacionalidad <br>
+        Distrito <br>
+        Celular <br>
+        Correo <br>
+        Sexo <br>
+        Artista favorito <br>
+        Tienes mascotas? <br>
+        Comentarios <br><br>
+        
+        Estos campos tendran que enviarse al back end usando el metodo GET
+        subir cambios al repositorio remoto</p>
+        <br><br> -->
+    <h1>Formulario</h1>
+    <form action="#">
+        <label>
+            Nombre:
+            <input name="name" type="text">
+        </label>
+        <br><br>
+        <label>
+            Apellido
+            <input name="last_name" type="text">
+        </label>
+        <br><br>
+        <label>
+            Edad
+            <input name="age" type="number">
+        </label>
+        <br><br>
+        <label>Nacionalidad</label>
+        <select name="nationality" id="nationality">
+            <option value="">Selecciona</option>
+            <option value="1">Peruana</option>
+            <option value="2">Colombiana</option>
+            <option value="3">Brasileña</option>
+            <option value="4">Venezolana</option>
+        </select>
+        <br><br>
+        <label>Distrito</label>
+        <select name="distrit" id="distrit">
+            <option value="">Selecciona un distrito</option>
+            <option value="1">Ancon</option>
+            <option value="2">Breña</option>
+            <option value="3">Carabayllo</option>
+            <option value="4">Comas</option>
+            <option value="5">Jesus Maria</option>
+            <option value="6">Lince</option>
+            <option value="7">La Molina</option>
+        </select>
+        <br><br>
+        <label>
+            Celular
+            <input name="phone" type="number">
+        </label>
+        <br><br>
+        <label>
+            Correo
+            <input name="email" type="email">
+        </label>
+        <br><br>
+        <label>Sexo</label>
+        <br><br>
+        <label>Masculino
+            <input name="sex" type="radio">
+        </label>
+        <label>Femenino
+            <input name="sex" type="radio">
+        </label>
+        <br><br>
+        <label>Artista Favorito</label>
+        <figure>
+            <img name="image" src="./images/2.jpg" width="10%" alt="100%">
+            <br>
+            <label>Abalpa
+                <input name="artist" type="checkbox">
+            </label>
+        </figure>
+        <figure>
+            <img name="image" src="./images/1.jpg" width="10%" alt="100%">
+            <br>
+            <label>Selena
+                <input name="artist" type="checkbox">
+            </label>
+        </figure>
+        <figure>
+            <img name="image" src="./images/3.jpg" width="10%" alt="100%">
+            <br>
+            <label>Bruno
+                <input name="artist" type="checkbox">
+            </label>
+        </figure>
+        <label>Tiene mascotas?</label>
+        <br>
+        <label>Si
+            <input name="pet" type="radio">
+        </label>
+        <label>No
+            <input name="pet" type="radio">
+        </label>
+        <br><br>
+        <label>Comentarios</label>
+        <br>
+        <textarea name="comment" cols="30" rows="10"></textarea>
+        <br>
+        <button>Enviar</button>
+    </form>
+    
+</body>
+</html>

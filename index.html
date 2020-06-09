@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="./newform.html">Enlace al nuevo formulario</a>
+    <form action="#">
+        <!-- 
+        <label for="name">Nombre</label>
+        <input id="name" type="text" placeholder="Nombre"> 
+        <label>
+            Nombre
+            <input type="text">
+        </label> -->
+        <fieldset>
+            <legend>Nombre</legend>
+            <input name="firts_name" type="text">
+        </fieldset>
+        <fieldset>
+            <legend>Apellido</legend>
+            <input name="last_name" type="text">
+        </fieldset>
+        <fieldset>
+            <legend>Pais</legend>
+            <select name="country">
+                <option value="">Selecciona tu pais</option>
+                <option value="1">Peru</option>
+                <option value="2">Colombia</option>
+                <option value="3">Brazil</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Comentarios</legend>
+            <textarea name="comment" cols="30" rows="10">
+            </textarea>
+        </fieldset>
+        <!--<fieldset>
+            <legend>Progreso</legend>
+            <progress value="0.5"></progress>
+        </fieldset> -->
+        <fieldset>
+            <legend>Correo</legend>
+            <input name="email" type="email">
+        </fieldset>
+        <fieldset>
+            <legend>Hobbies</legend>
+            <label>
+                Tennis
+                <input name="hobbie" type="checkbox">
+            </label>
+            <label>
+                Voley
+                <input name="hobbie" type="checkbox">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Sexo</legend>
+            <label>
+                Femenino
+                <input type="radio" name="sex">
+            </label>
+            <label>
+                Masculino
+                <input type="radio" name="sex">
+            </label>
+            <label>
+                Otro
+                <input type="radio" name="sex">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Edad</legend>
+            <input name="age" type="number">
+        </fieldset>
+        <fieldset>
+            <legend>Contraseña</legend>
+            <input name="password" type="password">
+        </fieldset>
+        <fieldset>
+            <legend>Rango</legend>
+            <input name="range" type="range">
+        </fieldset>
+        <fieldset>
+            <legend>Fecha</legend>
+            <input name="date" type="date">
+        </fieldset>
+        <fieldset>
+            <legend>Color</legend>
+            <input name="color" type="color">
+        </fieldset>
+        <fieldset>
+            <legend>Tiempo</legend>
+            <input name="time" type="time">
+        </fieldset>
+        <fieldset>
+            <legend>Mes</legend>
+            <input name="month" type="month">
+        </fieldset>
+        <fieldset>
+            <legend>Telefono</legend>
+            <input name="phone" type="tel">
+        </fieldset>
+        <fieldset>
+            <legend>Adjuntar archivo</legend>
+            <input name="file" type="file">
+        </fieldset>
+        <fieldset>
+            <button>Enviar</button>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
