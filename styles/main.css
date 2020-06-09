@@ -1,0 +1,35 @@
+textarea{
+	width:20%;
+	height:100px;
+	border:1px solid #6b5ceb;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	/*resize: vertical | horizontal | none | both*/
+	resize:none;
+	display:block;
+}
+img {
+    border-radius: 15px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"]{
+	width:150px;
+	padding:6px 10px;
+	border-radius:5px;
+	margin:8px 0;
+    display:inline-block;
+    background:#dbd9d9;
+    border:2px solid #f6f6f6;
+    margin-top:5px;
+    font-size:10px;
+    color:black;
+
+}
+label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:1px;
+}
