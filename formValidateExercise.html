@@ -15,6 +15,7 @@
         }
         label {
             display:block;
+
     
         }
  
@@ -77,6 +78,12 @@
             max-width: 250px;
             height: 35px;
         }
+        div{
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+
+        }
     </style>
 </head>
 <body>
@@ -92,18 +99,21 @@
         <input type="number" pattern="[0-9]{1,90}" placeholder="Edad" required>
         <br><br>
         <label>Correo</label>
-        <input type="text" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" placeholder="ejemplo@exs.com" required>
+        <input type="email" placeholder="ejemplo@exs.com" required>
         <br><br>
         <label>Sexo:</label>
+        <div class="labelSex">
         <label>Hombre
             <input name="sex" type="radio">
         </label>
         <label>Mujer
             <input checked name="sex" type="radio">
         </label>
-        <br><br>
+       </div>
+        <br>
         <label>Hobbies:</label>
         <br>
+        <div>
         <label>Voley
             <input type="checkbox">
         </label>
@@ -113,6 +123,7 @@
         <label>Natacion
             <input type="checkbox">
         </label>
+       </div>
         <br><br>
         <label>Pais</label>
         <select name="country">
