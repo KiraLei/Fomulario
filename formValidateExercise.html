@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           * {
+            box-sizing: border-box;
+        }
+ 
+        body {
+            text-align: center;
+            font-family:  Helvetica;
+        }
+        label {
+            display:block;
+    
+        }
+ 
+        form {
+            border: 1px solid #cdcdcd;
+            display: inline-block;
+            width: 100%;
+            max-width: 600px;
+            padding: 60px;
+            background: rgb(148, 214, 253);
+            margin-top: 120px;
+        }
+ 
+        input {
+            padding: 10px;
+            transition: all .5s ease;
+            border: 3px solid #cdcdcd;
+            width: 100%;
+            max-width: 600px;
+           
+        }
+ 
+        input:focus {
+            outline: none;
+            box-shadow: 0 0 10px #cdcdcd;
+        }
+ 
+        input:disabled,
+        input:read-only {
+            background: #cbcbcb;
+        }
+ 
+        input:invalid:focus {
+            border-color: red;
+        }
+ 
+        input:valid {
+            border-color: green;
+        }
+ 
+        button {
+            background-color: rgb(227, 245, 227);
+            padding: 10px;
+            color: black;
+            border: 1px solid rgb(151, 155, 151);
+            cursor: pointer;
+            width: 100%;
+            max-width: 80px;
+        }
+ 
+        h1 {
+            color: white;
+            border: 2px solid rgb(33, 94, 102);
+            max-width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <h1>Formulario</h1>
+        <label>Nombre</label>
+        <input type="text" pattern="[A-Za-z]{15}" required>
+        <br><br>
+        <label>Apellido</label>
+        <input type="text" pattern="[A-Za-z]{30}" required>
+        <br><br>
+        <label>Edad</label>
+        <input type="number" pattern="[0-9]{1,90}" required>
+        <br><br>
+        <label>Correo</label>
+        <input type="text" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" required>
+        <br><br>
+        <label required>Sexo</label>
+        <label>Hombre
+            <input name="sex" type="radio">
+        </label>
+        <label>Mujer
+            <input checked name="sex" type="radio">
+        </label>
+        <br><br>
+        <label>Hobbies</label>
+        <br>
+        <label>Voley
+            <input type="checkbox">
+        </label>
+        <label>Cantar
+            <input type="checkbox">
+        </label>
+        <label>Natacion
+            <input type="checkbox">
+        </label>
+        <br><br>
+        <label>Pais</label>
+        <select name="country">
+            <option value="">Selecciona Pais</option>
+            <option value="1">Peru</option>
+            <option value="2">Argentina</option>
+            <option value="3">Brasil</option>
+        </select>
+        <br><br>
+        <label>Cuidad</label>
+        <select name="city" required>
+            <option value="">Selecciona Ciudad</option>
+            <option value="1">Lima</option>
+            <option value="2">Azura</option>
+            <option value="3">Colra</option>
+        </select>
+        <br><br>
+        <label>Distrito</label>
+        <select name="distrit"  required>
+            <option value="">Selecciona Distrito</option>
+            <option value="1">Jesus Maria</option>
+            <option value="2">Lince</option>
+            <option value="3">San Isidro</option>
+        </select>
+        <br><br>
+        <label>Comentarios</label>
+        <br>
+        <textarea name="comment" cols="30" rows="10" pattern="[A-Za-z]{100}" required></textarea>
+        <br><br>
+        <button>Enviar</button>
+
+        
+        
+    </form>
+</body>
+</html>
