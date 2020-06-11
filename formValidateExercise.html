@@ -70,22 +70,29 @@
             border: 2px solid rgb(33, 94, 102);
             max-width: 250px;
         }
+        select{
+            color: black;
+            border:  1px solid rgb(151, 155, 151);
+            cursor: pointer;
+            max-width: 250px;
+            height: 35px;
+        }
     </style>
 </head>
 <body>
     <form action="#">
         <h1>Formulario</h1>
         <label>Nombre</label>
-        <input type="text" pattern="[A-Za-z]{15}" required>
+        <input type="text" pattern="[A-Za-z]{15}" placeholder="Nombre" required>
         <br><br>
         <label>Apellido</label>
-        <input type="text" pattern="[A-Za-z]{30}" required>
+        <input type="text" pattern="[A-Za-z]{30}" placeholder="Apellido" required>
         <br><br>
         <label>Edad</label>
-        <input type="number" pattern="[0-9]{1,90}" required>
+        <input type="number" pattern="[0-9]{1,90}" placeholder="Edad" required>
         <br><br>
         <label>Correo</label>
-        <input type="text" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" required>
+        <input type="text" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" placeholder="ejemplo@exs.com" required>
         <br><br>
         <label required>Sexo</label>
         <label>Hombre
